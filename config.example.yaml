@@ -1,0 +1,151 @@
+# ============================================================
+# 通用用户服务配置文件示例
+# ============================================================
+#
+# 使用说明:
+# 1. 复制此文件为 config.yaml:
+#    cp config.example.yaml config.yaml
+#
+# 2. 修改 config.yaml 中的配置项为您的实际值
+#
+# 3. 敏感信息建议通过环境变量配置:
+#    - JWT_SECRET
+#    - DATABASE_PASSWORD
+#    - REDIS_PASSWORD
+#    - EMAIL_PASSWORD
+#    - SMS_SECRET_KEY
+#
+# 4. 生产环境务必修改以下配置:
+#    - jwt.secret (强密码)
+#    - database.password
+#    - email.smtp (真实邮箱配置)
+#    - server.mode = "release"
+#
+# ============================================================
+
+server:
+  port: "8080"
+  mode: "debug"  # debug / release
+  read_timeout: 60
+  write_timeout: 60
+
+database:
+  driver: "postgres"           # postgres / mysql / sqlite
+  host: "localhost"
+  port: 5432
+  user: "postgres"
+  password: "postgres"
+  dbname: "universal_service_user"
+  max_open_conns: 100
+  max_idle_conns: 10
+  conn_max_lifetime: 3600      # 秒
+  auto_migrate: true           # 是否自动建表
+
+redis:
+  host: "localhost"
+  port: 6379
+  password: ""
+  db: 0
+  pool_size: 10
+
+jwt:
+  secret: "your-jwt-secret-change-me-in-production"  # 生产环境请使用环境变量
+  expire: 7200                 # Access Token 过期时间（秒，2小时）
+  refresh_expire: 604800       # Refresh Token 过期时间（秒，7天）
+  issuer: "universal-user-service"
+
+verification:
+  code_length: 6               # 验证码长度
+  expire: 300                  # 验证码过期时间（秒，5分钟）
+  rate_limit: 60     # 发送间隔（秒，60秒）
+
+
+  common-service:
+email:
+  enabled: true
+  smtp:
+    host: "smtp.example.com"
+    port: 587
+    username: "noreply@example.com"
+    password: "your-email-password"
+    from: "系统通知 <noreply@example.com>"
+  templates:
+    register: "您的注册验证码是：{code}，有效期5分钟"
+    reset_password: "您的重置密码验证码是：{code}，有效期5分钟"
+    login: "您的登录验证码是：{code}，有效期5分钟"
+  rate_limit:
+    interval: 60               # 秒
+
+sms:
+  enabled: false
+  provider: "tencent"          # tencent / aliyun / custom
+  tencent:
+    secret_id: ""
+    secret_key: ""
+    app_id: ""
+    sign: ""
+    templates:
+      register: ""             # 腾讯云短信模板 ID
+      reset_password: ""
+      login: ""
+  aliyun:
+    access_key_id: ""
+    access_key_secret: ""
+    sign_name: ""
+    templates:
+      register: "SMS_123456789"
+      reset_password: "SMS_987654321"
+      login: "SMS_111111111"
+  rate_limit:
+    interval: 60               # 秒
+
+oauth:
+  wechat:
+    enabled: false
+    app_id: ""
+    app_secret: ""
+    redirect_uri: "http://localhost:8080/api/v1/oauth/wechat/callback"
+  alipay:
+    enabled: false
+    app_id: ""
+    private_key: ""
+    alipay_public_key: ""
+    redirect_uri: "http://localhost:8080/api/v1/oauth/alipay/callback"
+  qq:
+    enabled: false
+    app_id: ""
+    app_secret: ""
+    redirect_uri: "http://localhost:8080/api/v1/oauth/qq/callback"
+
+# 登录防刷配置
+login_rate_limit:
+  enabled: true
+  ip:
+    max_attempts: 5            # 同一 IP 最大尝试次数
+    window: 60                 # 时间窗口（秒）
+    block_duration: 600        # 封禁时长（秒，10分钟）
+  account:
+    max_failures: 5            # 同一账号最大失败次数
+    window: 600                # 时间窗口（秒，10分钟）
+    lock_duration: 1800        # 锁定时长（秒，30分钟）
+  device:
+    max_failures: 10           # 同一设备最大失败次数
+    window: 3600               # 时间窗口（秒，1小时）
+
+# Webhook 配置（API 模式下钩子回调）
+webhook:
+  enabled: false
+  url: "https://your-domain.com/webhook/hooks"
+  secret: "your-webhook-secret"  # 签名验证密钥
+  events:                      # 需要回调的事件
+    - "user.created"
+    - "user.login"
+    - "user.password_reset"
+  timeout: 5                   # 请求超时（秒）
+  retry: 3                     # 失败重试次数
+
+# 日志配置
+logging:
+  level: "info"                # debug / info / warn / error
+  format: "json"               # json / text
+  enable_sensible_mask: true   # 敏感信息脱敏

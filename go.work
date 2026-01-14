@@ -1,0 +1,33 @@
+go 1.24.11
+
+use (
+	./api
+	./api/config-api
+	./api/user-api
+	./auth
+	./auth/domain
+	./auth/infrastructure
+	./bom
+	./cmd/api
+	./cmd/universal-service
+	./configcenter
+	./configcenter/domain
+	./configcenter/infrastructure
+	./hook
+	./notification
+	./notification/domain
+	./notification/infrastructure
+	./oauth
+	./oauth/domain
+	./oauth/infrastructure
+	./oauth/provider
+	./rules
+	./sdk
+	./share
+	./user
+	./user/domain
+	./user/infrastructure
+	./verification
+	./verification/domain
+	./verification/infrastructure
+)
