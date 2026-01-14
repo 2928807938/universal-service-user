@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"universal-service-user/rules/core"
+	"github.com/2928807938/universal-service-user/rules/core"
 )
 
 // toTime 尝试将值转换为 time.Time

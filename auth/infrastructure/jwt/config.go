@@ -4,11 +4,11 @@ import "time"
 
 // Config JWT 配置
 type Config struct {
-	Secret              string        // JWT 密钥
-	AccessTokenExpire   time.Duration // Access Token 过期时间（默认 2 小时）
-	RefreshTokenExpire  time.Duration // Refresh Token 过期时间（默认 7 天）
-	Issuer              string        // 签发者
-	EnableBlacklist     bool          // 是否启用黑名单（需要 Redis）
+	Secret             string        // JWT 密钥
+	AccessTokenExpire  time.Duration // Access Token 过期时间（默认 2 小时）
+	RefreshTokenExpire time.Duration // Refresh Token 过期时间（默认 7 天）
+	Issuer             string        // 签发者
+	EnableBlacklist    bool          // 是否启用黑名单（需要 Redis）
 }
 
 // DefaultConfig 默认配置

@@ -10,7 +10,7 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/google/uuid"
 
-	autherrors "universal-service-user/auth/domain/errors"
+	autherrors "github.com/2928807938/universal-service-user/auth/domain/errors"
 )
 
 // Provider JWT 提供者

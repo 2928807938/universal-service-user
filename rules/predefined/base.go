@@ -3,7 +3,7 @@ package predefined
 import (
 	"reflect"
 
-	"universal-service-user/rules/core"
+	"github.com/2928807938/universal-service-user/rules/core"
 )
 
 // RequiredRule 必填验证规则

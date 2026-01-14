@@ -1,8 +1,8 @@
-module universal-service-user/auth
+module github.com/2928807938/universal-service-user/auth
 
 go 1.24.11
 
 replace (
-	universal-service-user/auth/domain => ./domain
-	universal-service-user/auth/infrastructure => ./infrastructure
+	github.com/2928807938/universal-service-user/auth/domain => ./domain
+	github.com/2928807938/universal-service-user/auth/infrastructure => ./infrastructure
 )

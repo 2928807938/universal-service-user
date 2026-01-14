@@ -10,38 +10,38 @@ import (
 	"gorm.io/gorm"
 
 	// API 层
-	"universal-service-user/api/user-api/dto/request"
-	userAppService "universal-service-user/api/user-api/service"
+	"github.com/2928807938/universal-service-user/api/user-api/dto/request"
+	userAppService "github.com/2928807938/universal-service-user/api/user-api/service"
 
 	// Auth 模块
-	authDomain "universal-service-user/auth/domain/service"
-	authEntity "universal-service-user/auth/infrastructure/entity"
-	authJWT "universal-service-user/auth/infrastructure/jwt"
-	authRepo "universal-service-user/auth/infrastructure/repository"
+	authDomain "github.com/2928807938/universal-service-user/auth/domain/service"
+	authEntity "github.com/2928807938/universal-service-user/auth/infrastructure/entity"
+	authJWT "github.com/2928807938/universal-service-user/auth/infrastructure/jwt"
+	authRepo "github.com/2928807938/universal-service-user/auth/infrastructure/repository"
 
 	// Hook 模块
-	"universal-service-user/hook"
+	"github.com/2928807938/universal-service-user/hook"
 
 	// Notification 模块
-	notificationDomain "universal-service-user/notification/domain/service"
-	notificationEmail "universal-service-user/notification/infrastructure/email"
+	notificationDomain "github.com/2928807938/universal-service-user/notification/domain/service"
+	notificationEmail "github.com/2928807938/universal-service-user/notification/infrastructure/email"
 
 	// OAuth 模块
-	oauthEntity "universal-service-user/oauth/infrastructure/entity"
+	oauthEntity "github.com/2928807938/universal-service-user/oauth/infrastructure/entity"
 
 	// Share 模块
-	"universal-service-user/share/config"
-	shareRedis "universal-service-user/share/redis"
+	"github.com/2928807938/universal-service-user/share/config"
+	shareRedis "github.com/2928807938/universal-service-user/share/redis"
 
 	// User 模块
-	userDomain "universal-service-user/user/domain/service"
-	userInfraEntity "universal-service-user/user/infrastructure/entity"
-	userInfraRepo "universal-service-user/user/infrastructure/repository"
+	userDomain "github.com/2928807938/universal-service-user/user/domain/service"
+	userInfraEntity "github.com/2928807938/universal-service-user/user/infrastructure/entity"
+	userInfraRepo "github.com/2928807938/universal-service-user/user/infrastructure/repository"
 
 	// Verification 模块
-	verificationEnum "universal-service-user/verification/domain/enum"
-	verificationDomain "universal-service-user/verification/domain/service"
-	verificationInfraRepo "universal-service-user/verification/infrastructure/repository"
+	verificationEnum "github.com/2928807938/universal-service-user/verification/domain/enum"
+	verificationDomain "github.com/2928807938/universal-service-user/verification/domain/service"
+	verificationInfraRepo "github.com/2928807938/universal-service-user/verification/infrastructure/repository"
 )
 
 // Client SDK 客户端
@@ -69,11 +69,11 @@ type Client struct {
 	userAppService *userAppService.UserAppService
 
 	// 领域服务（暴露给钩子使用）
-	userDomainService    *userDomain.UserDomainService
-	loginAttemptService  *userDomain.LoginAttemptService
-	verificationService  *verificationDomain.VerificationService
-	notificationService  *notificationDomain.NotificationService
-	authService          *authDomain.AuthService
+	userDomainService   *userDomain.UserDomainService
+	loginAttemptService *userDomain.LoginAttemptService
+	verificationService *verificationDomain.VerificationService
+	notificationService *notificationDomain.NotificationService
+	authService         *authDomain.AuthService
 
 	// 钩子执行器
 	hookExecutor *hook.Executor

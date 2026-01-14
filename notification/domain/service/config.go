@@ -3,9 +3,9 @@ package service
 import (
 	"fmt"
 
-	"universal-service-user/notification/infrastructure/email"
-	"universal-service-user/notification/infrastructure/sms/aliyun"
-	"universal-service-user/notification/infrastructure/sms/tencent"
+	"github.com/2928807938/universal-service-user/notification/infrastructure/email"
+	"github.com/2928807938/universal-service-user/notification/infrastructure/sms/aliyun"
+	"github.com/2928807938/universal-service-user/notification/infrastructure/sms/tencent"
 )
 
 // NotificationConfig 通知配置
@@ -16,9 +16,9 @@ type NotificationConfig struct {
 
 // EmailConfig 邮箱配置
 type EmailConfig struct {
-	Enabled  bool               // 是否启用
-	Provider string             // 提供者类型(当前仅支持 "smtp")
-	SMTP     *email.SMTPConfig  // SMTP 配置
+	Enabled  bool              // 是否启用
+	Provider string            // 提供者类型(当前仅支持 "smtp")
+	SMTP     *email.SMTPConfig // SMTP 配置
 }
 
 // SMSConfig 短信配置

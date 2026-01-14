@@ -1,4 +1,4 @@
-module universal-service-user/share
+module github.com/2928807938/universal-service-user/share
 
 go 1.24.11
 
@@ -59,4 +59,4 @@ require (
 	google.golang.org/protobuf v1.33.0 // indirect
 )
 
-replace universal-service-user/bom => ../bom
+replace github.com/2928807938/universal-service-user/bom => ../bom

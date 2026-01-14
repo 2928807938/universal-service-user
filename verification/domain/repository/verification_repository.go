@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"universal-service-user/verification/domain/enum"
-	"universal-service-user/verification/domain/valueobject"
+	"github.com/2928807938/universal-service-user/verification/domain/enum"
+	"github.com/2928807938/universal-service-user/verification/domain/valueobject"
 )
 
 // VerificationRepository 验证码仓储接口

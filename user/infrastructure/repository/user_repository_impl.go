@@ -5,12 +5,12 @@ import (
 
 	"gorm.io/gorm"
 
-	"universal-service-user/share/repository"
-	basegorm "universal-service-user/share/repository/gorm"
-	"universal-service-user/user/domain/entity"
-	domainRepo "universal-service-user/user/domain/repository"
-	"universal-service-user/user/infrastructure/converter"
-	infraEntity "universal-service-user/user/infrastructure/entity"
+	"github.com/2928807938/universal-service-user/share/repository"
+	basegorm "github.com/2928807938/universal-service-user/share/repository/gorm"
+	"github.com/2928807938/universal-service-user/user/domain/entity"
+	domainRepo "github.com/2928807938/universal-service-user/user/domain/repository"
+	"github.com/2928807938/universal-service-user/user/infrastructure/converter"
+	infraEntity "github.com/2928807938/universal-service-user/user/infrastructure/entity"
 )
 
 // UserRepositoryImpl 用户仓储实现

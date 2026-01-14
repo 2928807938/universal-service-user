@@ -2,11 +2,11 @@ package request
 
 // RegisterRequest 用户注册请求
 type RegisterRequest struct {
-	Email    string `json:"email" vd:"email($)"`                    // 邮箱(与手机号二选一)
-	Phone    string `json:"phone"`                                   // 手机号(与邮箱二选一)
-	Password string `json:"password" vd:"len($)>=6 && len($)<=32"`  // 密码(6-32位)
-	Code     string `json:"code" vd:"len($)==6"`                     // 验证码
-	Username string `json:"username"`                                // 用户名(可选,默认生成)
+	Email    string `json:"email" vd:"email($)"`                   // 邮箱(与手机号二选一)
+	Phone    string `json:"phone"`                                 // 手机号(与邮箱二选一)
+	Password string `json:"password" vd:"len($)>=6 && len($)<=32"` // 密码(6-32位)
+	Code     string `json:"code" vd:"len($)==6"`                   // 验证码
+	Username string `json:"username"`                              // 用户名(可选,默认生成)
 }
 
 // CreateUserRequest 创建用户请求

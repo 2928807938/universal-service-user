@@ -1,7 +1,7 @@
 package definition
 
 import (
-	"universal-service-user/rules/core"
+	"github.com/2928807938/universal-service-user/rules/core"
 )
 
 // CustomRule 是通用的自定义规则实现

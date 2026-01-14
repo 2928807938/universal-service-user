@@ -6,18 +6,18 @@ import (
 	"math/big"
 	"time"
 
-	"universal-service-user/verification/domain/enum"
-	verrors "universal-service-user/verification/domain/errors"
+	"github.com/2928807938/universal-service-user/verification/domain/enum"
+	verrors "github.com/2928807938/universal-service-user/verification/domain/errors"
 )
 
 // VerificationCode 验证码值对象
 type VerificationCode struct {
-	Code      string                    // 验证码
-	Target    string                    // 目标（邮箱或手机号）
-	Scene     enum.VerificationScene    // 使用场景
-	ExpiresAt time.Time                 // 过期时间
-	Verified  bool                      // 是否已验证
-	CreatedAt time.Time                 // 创建时间
+	Code      string                 // 验证码
+	Target    string                 // 目标（邮箱或手机号）
+	Scene     enum.VerificationScene // 使用场景
+	ExpiresAt time.Time              // 过期时间
+	Verified  bool                   // 是否已验证
+	CreatedAt time.Time              // 创建时间
 }
 
 // NewVerificationCode 创建新的验证码

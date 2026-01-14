@@ -2,7 +2,7 @@ package repository
 
 import (
 	"context"
-	"universal-service-user/configcenter/domain/entity"
+	"github.com/2928807938/universal-service-user/configcenter/domain/entity"
 )
 
 // AppRepository manages tenant apps.

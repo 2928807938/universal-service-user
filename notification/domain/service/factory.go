@@ -3,10 +3,10 @@ package service
 import (
 	"fmt"
 
-	"universal-service-user/notification/domain/provider"
-	"universal-service-user/notification/infrastructure/email"
-	"universal-service-user/notification/infrastructure/sms/aliyun"
-	"universal-service-user/notification/infrastructure/sms/tencent"
+	"github.com/2928807938/universal-service-user/notification/domain/provider"
+	"github.com/2928807938/universal-service-user/notification/infrastructure/email"
+	"github.com/2928807938/universal-service-user/notification/infrastructure/sms/aliyun"
+	"github.com/2928807938/universal-service-user/notification/infrastructure/sms/tencent"
 )
 
 // NewNotificationServiceFromConfig 从配置创建通知服务

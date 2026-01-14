@@ -8,7 +8,7 @@ import (
 	"net/smtp"
 	"strings"
 
-	"universal-service-user/notification/domain/provider"
+	"github.com/2928807938/universal-service-user/notification/domain/provider"
 )
 
 // SMTPConfig SMTP 配置

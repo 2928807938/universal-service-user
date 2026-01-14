@@ -6,7 +6,7 @@ import (
 
 	"gorm.io/gorm"
 
-	"universal-service-user/share/repository"
+	"github.com/2928807938/universal-service-user/share/repository"
 )
 
 // 事务上下文键

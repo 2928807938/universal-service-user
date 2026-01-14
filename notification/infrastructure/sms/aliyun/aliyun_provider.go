@@ -7,8 +7,8 @@ import (
 
 	"github.com/aliyun/alibaba-cloud-sdk-go/services/dysmsapi"
 
-	"universal-service-user/notification/domain/provider"
-	"universal-service-user/notification/infrastructure/sms"
+	"github.com/2928807938/universal-service-user/notification/domain/provider"
+	"github.com/2928807938/universal-service-user/notification/infrastructure/sms"
 )
 
 // AliyunConfig 阿里云短信配置

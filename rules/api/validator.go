@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"time"
 
-	"universal-service-user/rules/core"
-	"universal-service-user/rules/predefined"
+	"github.com/2928807938/universal-service-user/rules/core"
+	"github.com/2928807938/universal-service-user/rules/predefined"
 )
 
 // Validator 提供链式调用的验证 API

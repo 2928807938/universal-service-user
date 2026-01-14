@@ -4,17 +4,17 @@ import (
 	"context"
 	"fmt"
 
-	"universal-service-user/api/user-api/converter"
-	"universal-service-user/api/user-api/dto/request"
-	"universal-service-user/api/user-api/dto/vo"
-	authDomain "universal-service-user/auth/domain/service"
-	"universal-service-user/auth/infrastructure/jwt"
-	notificationDomain "universal-service-user/notification/domain/service"
-	"universal-service-user/share/config"
-	userErrors "universal-service-user/user/domain/errors"
-	userDomain "universal-service-user/user/domain/service"
-	verificationEnum "universal-service-user/verification/domain/enum"
-	verificationDomain "universal-service-user/verification/domain/service"
+	"github.com/2928807938/universal-service-user/api/user-api/converter"
+	"github.com/2928807938/universal-service-user/api/user-api/dto/request"
+	"github.com/2928807938/universal-service-user/api/user-api/dto/vo"
+	authDomain "github.com/2928807938/universal-service-user/auth/domain/service"
+	"github.com/2928807938/universal-service-user/auth/infrastructure/jwt"
+	notificationDomain "github.com/2928807938/universal-service-user/notification/domain/service"
+	"github.com/2928807938/universal-service-user/share/config"
+	userErrors "github.com/2928807938/universal-service-user/user/domain/errors"
+	userDomain "github.com/2928807938/universal-service-user/user/domain/service"
+	verificationEnum "github.com/2928807938/universal-service-user/verification/domain/enum"
+	verificationDomain "github.com/2928807938/universal-service-user/verification/domain/service"
 )
 
 // AuthAppService 认证应用服务

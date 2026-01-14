@@ -34,9 +34,9 @@ func Failure(field, ruleName, message string) RuleResult {
 
 // ValidationError 表示验证错误
 type ValidationError struct {
-	Field    string `json:"field"`
-	Rule     string `json:"rule"`
-	Message  string `json:"message"`
+	Field   string `json:"field"`
+	Rule    string `json:"rule"`
+	Message string `json:"message"`
 }
 
 func (e *ValidationError) Error() string {

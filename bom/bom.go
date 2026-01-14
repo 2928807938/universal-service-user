@@ -6,17 +6,17 @@ import (
 	// Hertz HTTP 框架
 	_ "github.com/cloudwego/hertz/pkg/app"
 	_ "github.com/cloudwego/hertz/pkg/app/server"
-	_ "github.com/cloudwego/hertz/pkg/protocol/consts"
 	_ "github.com/cloudwego/hertz/pkg/common/hlog"
+	_ "github.com/cloudwego/hertz/pkg/protocol/consts"
 
 	// Kitex RPC 框架
 	_ "github.com/cloudwego/kitex/client"
-	_ "github.com/cloudwego/kitex/server"
 	_ "github.com/cloudwego/kitex/pkg/klog"
+	_ "github.com/cloudwego/kitex/server"
 
 	// 通用工具
-	_ "github.com/google/uuid"
 	_ "github.com/bytedance/sonic"
+	_ "github.com/google/uuid"
 
 	// 数据库
 	_ "gorm.io/driver/postgres"

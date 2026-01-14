@@ -1,12 +1,12 @@
-module universal-service-user/user/infrastructure
+module github.com/2928807938/universal-service-user/user/infrastructure
 
 go 1.24.11
 
 require (
+	github.com/2928807938/universal-service-user/share v0.0.0
+	github.com/2928807938/universal-service-user/user/domain v0.0.0
 	// 数据库
 	gorm.io/gorm v1.25.12
-	universal-service-user/share v0.0.0
-	universal-service-user/user/domain v0.0.0
 )
 
 require (
@@ -47,7 +47,7 @@ require (
 )
 
 replace (
-	universal-service-user/bom => ../../bom
-	universal-service-user/share => ../../share
-	universal-service-user/user/domain => ../domain
+	github.com/2928807938/universal-service-user/bom => ../../bom
+	github.com/2928807938/universal-service-user/share => ../../share
+	github.com/2928807938/universal-service-user/user/domain => ../domain
 )

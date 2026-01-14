@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"time"
 
-	"universal-service-user/rules"
-	basegorm "universal-service-user/share/repository/gorm"
-	"universal-service-user/user/domain/entity"
-	"universal-service-user/user/domain/enum"
-	"universal-service-user/user/domain/errors"
-	"universal-service-user/user/domain/repository"
-	"universal-service-user/user/domain/valueobject"
+	"github.com/2928807938/universal-service-user/rules"
+	basegorm "github.com/2928807938/universal-service-user/share/repository/gorm"
+	"github.com/2928807938/universal-service-user/user/domain/entity"
+	"github.com/2928807938/universal-service-user/user/domain/enum"
+	"github.com/2928807938/universal-service-user/user/domain/errors"
+	"github.com/2928807938/universal-service-user/user/domain/repository"
+	"github.com/2928807938/universal-service-user/user/domain/valueobject"
 )
 
 // UserDomainService 用户领域服务

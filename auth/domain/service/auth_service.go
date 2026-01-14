@@ -4,12 +4,12 @@ import (
 	"context"
 	"time"
 
-	autherrors "universal-service-user/auth/domain/errors"
-	"universal-service-user/auth/domain/entity"
-	"universal-service-user/auth/domain/repository"
-	"universal-service-user/auth/infrastructure/jwt"
-	userEntity "universal-service-user/user/domain/entity"
-	userService "universal-service-user/user/domain/service"
+	"github.com/2928807938/universal-service-user/auth/domain/entity"
+	autherrors "github.com/2928807938/universal-service-user/auth/domain/errors"
+	"github.com/2928807938/universal-service-user/auth/domain/repository"
+	"github.com/2928807938/universal-service-user/auth/infrastructure/jwt"
+	userEntity "github.com/2928807938/universal-service-user/user/domain/entity"
+	userService "github.com/2928807938/universal-service-user/user/domain/service"
 )
 
 // AuthService 认证领域服务

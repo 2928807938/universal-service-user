@@ -1,21 +1,21 @@
 package entity
 
 import (
-	basegorm "universal-service-user/share/repository/gorm"
-	"universal-service-user/user/domain/enum"
-	"universal-service-user/user/domain/valueobject"
+	basegorm "github.com/2928807938/universal-service-user/share/repository/gorm"
+	"github.com/2928807938/universal-service-user/user/domain/enum"
+	"github.com/2928807938/universal-service-user/user/domain/valueobject"
 )
 
 // User 用户实体 - 聚合根
 type User struct {
 	ID           int
-	Username     string                // 用户名（唯一，可空）
-	Nickname     string                // 昵称（用户显示名称）
-	Avatar       string                // 头像URL
-	Email        valueobject.Email     // 邮箱（唯一，可空）
-	Phone        valueobject.Phone     // 手机号（唯一，可空）
-	PasswordHash string                // 密码哈希（可空，第三方登录用户可能无密码）
-	Status       enum.UserStatus       // 用户状态
+	Username     string            // 用户名（唯一，可空）
+	Nickname     string            // 昵称（用户显示名称）
+	Avatar       string            // 头像URL
+	Email        valueobject.Email // 邮箱（唯一，可空）
+	Phone        valueobject.Phone // 手机号（唯一，可空）
+	PasswordHash string            // 密码哈希（可空，第三方登录用户可能无密码）
+	Status       enum.UserStatus   // 用户状态
 	basegorm.AuditFields
 }
 

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"universal-service-user/rules/core"
+	"github.com/2928807938/universal-service-user/rules/core"
 )
 
 // EmailRule 邮箱格式验证规则

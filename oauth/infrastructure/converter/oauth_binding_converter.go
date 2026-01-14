@@ -1,9 +1,9 @@
 package converter
 
 import (
-	basegorm "universal-service-user/share/repository/gorm"
-	"universal-service-user/oauth/domain/entity"
-	infraEntity "universal-service-user/oauth/infrastructure/entity"
+	"github.com/2928807938/universal-service-user/oauth/domain/entity"
+	infraEntity "github.com/2928807938/universal-service-user/oauth/infrastructure/entity"
+	basegorm "github.com/2928807938/universal-service-user/share/repository/gorm"
 )
 
 // OAuthBindingConverter OAuth 绑定转换器

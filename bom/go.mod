@@ -1,4 +1,4 @@
-module universal-service-user/bom
+module github.com/2928807938/universal-service-user/bom
 
 go 1.24.11
 

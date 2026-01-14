@@ -3,7 +3,7 @@ package errors
 import (
 	"fmt"
 
-	"universal-service-user/share/errors"
+	"github.com/2928807938/universal-service-user/share/errors"
 )
 
 // ==================== OAuth 模块错误 ====================
@@ -11,15 +11,15 @@ import (
 
 const (
 	// OAuth 模块错误码
-	OAuthUnsupportedProvider  = 40001 // 不支持的登录平台
-	OAuthAuthorizationFailed  = 40002 // 第三方授权失败
-	OAuthGetUserInfoFailed    = 40003 // 获取用户信息失败
-	OAuthAccountAlreadyBound  = 40004 // 账号已绑定其他用户
-	OAuthBindingNotFound      = 40005 // OAuth 绑定不存在
-	OAuthInvalidProvider      = 40006 // Provider 配置无效
-	OAuthExchangeTokenFailed  = 40007 // 换取 Token 失败
-	OAuthRefreshTokenFailed   = 40008 // 刷新 Token 失败
-	OAuthProviderNotEnabled   = 40009 // 平台未启用
+	OAuthUnsupportedProvider = 40001 // 不支持的登录平台
+	OAuthAuthorizationFailed = 40002 // 第三方授权失败
+	OAuthGetUserInfoFailed   = 40003 // 获取用户信息失败
+	OAuthAccountAlreadyBound = 40004 // 账号已绑定其他用户
+	OAuthBindingNotFound     = 40005 // OAuth 绑定不存在
+	OAuthInvalidProvider     = 40006 // Provider 配置无效
+	OAuthExchangeTokenFailed = 40007 // 换取 Token 失败
+	OAuthRefreshTokenFailed  = 40008 // 刷新 Token 失败
+	OAuthProviderNotEnabled  = 40009 // 平台未启用
 )
 
 // OAuthError OAuth 模块错误，继承自 AppError

@@ -3,12 +3,12 @@ package service
 import (
 	"context"
 
-	"universal-service-user/api/user-api/dto/request"
-	"universal-service-user/api/user-api/dto/vo"
-	notificationDomain "universal-service-user/notification/domain/service"
-	verificationEnum "universal-service-user/verification/domain/enum"
-	verificationErrors "universal-service-user/verification/domain/errors"
-	verificationDomain "universal-service-user/verification/domain/service"
+	"github.com/2928807938/universal-service-user/api/user-api/dto/request"
+	"github.com/2928807938/universal-service-user/api/user-api/dto/vo"
+	notificationDomain "github.com/2928807938/universal-service-user/notification/domain/service"
+	verificationEnum "github.com/2928807938/universal-service-user/verification/domain/enum"
+	verificationErrors "github.com/2928807938/universal-service-user/verification/domain/errors"
+	verificationDomain "github.com/2928807938/universal-service-user/verification/domain/service"
 )
 
 // VerificationAppService 验证码应用服务

@@ -3,7 +3,7 @@ package errors
 import (
 	"fmt"
 
-	"universal-service-user/share/errors"
+	"github.com/2928807938/universal-service-user/share/errors"
 )
 
 // ==================== Auth 模块错误 ====================
@@ -11,24 +11,24 @@ import (
 
 const (
 	// Auth 模块错误码 - 基础认证错误 (30001-30099)
-	AuthNotLoggedIn        = 30001 // 未登录
-	AuthTokenExpired       = 30002 // Token 已过期
-	AuthTokenInvalid       = 30003 // Token 无效
-	AuthTokenRevoked       = 30004 // Token 已被撤销
-	AuthRefreshTokenFailed = 30005 // 刷新 Token 失败
+	AuthNotLoggedIn         = 30001 // 未登录
+	AuthTokenExpired        = 30002 // Token 已过期
+	AuthTokenInvalid        = 30003 // Token 无效
+	AuthTokenRevoked        = 30004 // Token 已被撤销
+	AuthRefreshTokenFailed  = 30005 // 刷新 Token 失败
 	AuthTokenGenerateFailed = 30006 // 生成 Token 失败
 
 	// Auth 模块错误码 - 登录防刷 (30501-30599)
-	AuthIPRateLimited      = 30501 // IP 请求过于频繁
-	AuthAccountLocked      = 30502 // 登录失败次数过多，账号已锁定
-	AuthDeviceRateLimited  = 30503 // 设备请求过于频繁
-	AuthCaptchaRequired    = 30504 // 需要验证码
-	AuthCaptchaInvalid     = 30505 // 验证码错误
+	AuthIPRateLimited     = 30501 // IP 请求过于频繁
+	AuthAccountLocked     = 30502 // 登录失败次数过多，账号已锁定
+	AuthDeviceRateLimited = 30503 // 设备请求过于频繁
+	AuthCaptchaRequired   = 30504 // 需要验证码
+	AuthCaptchaInvalid    = 30505 // 验证码错误
 
 	// Auth 模块错误码 - 会话管理 (30601-30699)
-	AuthSessionNotFound    = 30601 // 会话不存在
-	AuthSessionExpired     = 30602 // 会话已过期
-	AuthInvalidDeviceInfo  = 30603 // 设备信息无效
+	AuthSessionNotFound   = 30601 // 会话不存在
+	AuthSessionExpired    = 30602 // 会话已过期
+	AuthInvalidDeviceInfo = 30603 // 设备信息无效
 )
 
 // AuthError Auth 模块错误，继承自 AppError

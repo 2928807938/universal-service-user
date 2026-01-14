@@ -1,9 +1,5 @@
-module universal-service-user/rules
+module github.com/2928807938/universal-service-user/rules
 
 go 1.24.11
 
-require (
-	universal-service-user/bom v0.0.0
-)
-
-replace universal-service-user/bom => ../bom
+replace github.com/2928807938/universal-service-user/bom => ../bom

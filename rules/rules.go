@@ -38,9 +38,9 @@
 package rules
 
 import (
-	"universal-service-user/rules/api"
-	"universal-service-user/rules/core"
-	"universal-service-user/rules/definition"
+	"github.com/2928807938/universal-service-user/rules/api"
+	"github.com/2928807938/universal-service-user/rules/core"
+	"github.com/2928807938/universal-service-user/rules/definition"
 )
 
 // 重新导出核心类型

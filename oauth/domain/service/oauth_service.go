@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 
-	"universal-service-user/oauth/domain/entity"
-	oautherrors "universal-service-user/oauth/domain/errors"
-	"universal-service-user/oauth/domain/repository"
-	"universal-service-user/oauth/provider"
+	"github.com/2928807938/universal-service-user/oauth/domain/entity"
+	oautherrors "github.com/2928807938/universal-service-user/oauth/domain/errors"
+	"github.com/2928807938/universal-service-user/oauth/domain/repository"
+	"github.com/2928807938/universal-service-user/oauth/provider"
 )
 
 // OAuthService OAuth 领域服务

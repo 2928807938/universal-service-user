@@ -9,10 +9,10 @@ import (
 
 	"github.com/redis/go-redis/v9"
 
-	"universal-service-user/verification/domain/enum"
-	verrors "universal-service-user/verification/domain/errors"
-	"universal-service-user/verification/domain/repository"
-	"universal-service-user/verification/domain/valueobject"
+	"github.com/2928807938/universal-service-user/verification/domain/enum"
+	verrors "github.com/2928807938/universal-service-user/verification/domain/errors"
+	"github.com/2928807938/universal-service-user/verification/domain/repository"
+	"github.com/2928807938/universal-service-user/verification/domain/valueobject"
 )
 
 // RedisVerificationRepository Redis 验证码仓储实现

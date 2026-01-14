@@ -5,8 +5,8 @@ import (
 
 	"gorm.io/datatypes"
 
-	"universal-service-user/configcenter/domain/entity"
-	infraEntity "universal-service-user/configcenter/infrastructure/entity"
+	"github.com/2928807938/universal-service-user/configcenter/domain/entity"
+	infraEntity "github.com/2928807938/universal-service-user/configcenter/infrastructure/entity"
 )
 
 // ConfigHistoryConverter converts between domain and persistence models.

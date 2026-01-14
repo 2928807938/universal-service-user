@@ -5,9 +5,9 @@ import (
 
 	"gorm.io/gorm"
 
-	"universal-service-user/configcenter/domain/entity"
-	domainRepo "universal-service-user/configcenter/domain/repository"
-	"universal-service-user/configcenter/infrastructure/converter"
+	"github.com/2928807938/universal-service-user/configcenter/domain/entity"
+	domainRepo "github.com/2928807938/universal-service-user/configcenter/domain/repository"
+	"github.com/2928807938/universal-service-user/configcenter/infrastructure/converter"
 )
 
 // ConfigHistoryRepositoryImpl implements ConfigHistoryRepository with GORM.

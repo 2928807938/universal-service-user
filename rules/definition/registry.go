@@ -3,7 +3,7 @@ package definition
 import (
 	"sync"
 
-	"universal-service-user/rules/core"
+	"github.com/2928807938/universal-service-user/rules/core"
 )
 
 // RuleRegistry 是规则注册中心

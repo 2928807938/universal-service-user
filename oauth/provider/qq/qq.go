@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"universal-service-user/oauth/provider"
+	"github.com/2928807938/universal-service-user/oauth/provider"
 )
 
 // Provider QQ OAuth 提供者

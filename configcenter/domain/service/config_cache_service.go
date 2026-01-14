@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 	"fmt"
+	"github.com/2928807938/universal-service-user/configcenter/domain/entity"
+	"github.com/2928807938/universal-service-user/configcenter/domain/repository"
+	"github.com/2928807938/universal-service-user/share/errors"
 	"sync"
-	"universal-service-user/configcenter/domain/entity"
-	"universal-service-user/configcenter/domain/repository"
-	"universal-service-user/share/errors"
 )
 
 // CachedConfig represents in-memory tenant config.

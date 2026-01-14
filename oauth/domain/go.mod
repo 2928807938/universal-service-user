@@ -1,10 +1,10 @@
-module universal-service-user/oauth/domain
+module github.com/2928807938/universal-service-user/oauth/domain
 
 go 1.24.11
 
 require (
-	universal-service-user/oauth/provider v0.0.0
-	universal-service-user/share v0.0.0
+	github.com/2928807938/universal-service-user/oauth/provider v0.0.0
+	github.com/2928807938/universal-service-user/share v0.0.0
 )
 
 require (
@@ -36,7 +36,7 @@ require (
 	golang.org/x/arch v0.2.0 // indirect
 	golang.org/x/crypto v0.22.0 // indirect
 	golang.org/x/sync v0.8.0 // indirect
-	golang.org/x/sys v0.24.0 // indirect
+	golang.org/x/sys v0.26.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 	gorm.io/driver/mysql v1.5.7 // indirect
@@ -46,6 +46,6 @@ require (
 )
 
 replace (
-	universal-service-user/oauth/provider => ../provider
-	universal-service-user/share => ../../share
+	github.com/2928807938/universal-service-user/oauth/provider => ../provider
+	github.com/2928807938/universal-service-user/share => ../../share
 )

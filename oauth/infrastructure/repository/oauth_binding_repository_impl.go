@@ -5,12 +5,12 @@ import (
 
 	"gorm.io/gorm"
 
-	"universal-service-user/share/repository"
-	basegorm "universal-service-user/share/repository/gorm"
-	"universal-service-user/oauth/domain/entity"
-	domainRepo "universal-service-user/oauth/domain/repository"
-	"universal-service-user/oauth/infrastructure/converter"
-	infraEntity "universal-service-user/oauth/infrastructure/entity"
+	"github.com/2928807938/universal-service-user/oauth/domain/entity"
+	domainRepo "github.com/2928807938/universal-service-user/oauth/domain/repository"
+	"github.com/2928807938/universal-service-user/oauth/infrastructure/converter"
+	infraEntity "github.com/2928807938/universal-service-user/oauth/infrastructure/entity"
+	"github.com/2928807938/universal-service-user/share/repository"
+	basegorm "github.com/2928807938/universal-service-user/share/repository/gorm"
 )
 
 // OAuthBindingRepositoryImpl OAuth 绑定仓储实现

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"universal-service-user/rules/core"
+	"github.com/2928807938/universal-service-user/rules/core"
 )
 
 // EqualsRule 等于指定值验证规则

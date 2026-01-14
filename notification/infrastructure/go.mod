@@ -1,10 +1,10 @@
-module universal-service-user/notification/infrastructure
+module github.com/2928807938/universal-service-user/notification/infrastructure
 
 go 1.24.11
 
-replace universal-service-user/notification/domain => ../domain
+replace github.com/2928807938/universal-service-user/notification/domain => ../domain
 
-replace universal-service-user/verification => ../../verification
+replace github.com/2928807938/universal-service-user/verification => ../../verification
 
 require (
 	github.com/aliyun/alibaba-cloud-sdk-go v1.63.107

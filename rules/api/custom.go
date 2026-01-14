@@ -1,8 +1,8 @@
 package api
 
 import (
-	"universal-service-user/rules/core"
-	"universal-service-user/rules/definition"
+	"github.com/2928807938/universal-service-user/rules/core"
+	"github.com/2928807938/universal-service-user/rules/definition"
 )
 
 // CustomRuleBuilder 自定义规则构建器

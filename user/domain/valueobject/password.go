@@ -1,8 +1,8 @@
 package valueobject
 
 import (
+	"github.com/2928807938/universal-service-user/user/domain/errors"
 	"golang.org/x/crypto/bcrypt"
-	"universal-service-user/user/domain/errors"
 )
 
 // Password 密码值对象

@@ -2,15 +2,15 @@ package service
 
 import (
 	"context"
-	"universal-service-user/api/user-api/converter"
-	"universal-service-user/api/user-api/dto/request"
-	"universal-service-user/api/user-api/dto/vo"
-	"universal-service-user/user/domain/enum"
-	"universal-service-user/user/domain/repository"
-	domainService "universal-service-user/user/domain/service"
-	"universal-service-user/user/domain/valueobject"
-	verificationEnum "universal-service-user/verification/domain/enum"
-	verificationDomain "universal-service-user/verification/domain/service"
+	"github.com/2928807938/universal-service-user/api/user-api/converter"
+	"github.com/2928807938/universal-service-user/api/user-api/dto/request"
+	"github.com/2928807938/universal-service-user/api/user-api/dto/vo"
+	"github.com/2928807938/universal-service-user/user/domain/enum"
+	"github.com/2928807938/universal-service-user/user/domain/repository"
+	domainService "github.com/2928807938/universal-service-user/user/domain/service"
+	"github.com/2928807938/universal-service-user/user/domain/valueobject"
+	verificationEnum "github.com/2928807938/universal-service-user/verification/domain/enum"
+	verificationDomain "github.com/2928807938/universal-service-user/verification/domain/service"
 )
 
 // UserAppService 用户应用服务

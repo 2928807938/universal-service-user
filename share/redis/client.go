@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"universal-service-user/share/config"
+	"github.com/2928807938/universal-service-user/share/config"
 
 	"github.com/redis/go-redis/v9"
 )

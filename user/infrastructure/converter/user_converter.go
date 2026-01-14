@@ -1,12 +1,12 @@
 package converter
 
 import (
-	infraEntity "universal-service-user/user/infrastructure/entity"
-	"universal-service-user/user/domain/entity"
-	"universal-service-user/user/domain/enum"
-	"universal-service-user/user/domain/valueobject"
+	"github.com/2928807938/universal-service-user/user/domain/entity"
+	"github.com/2928807938/universal-service-user/user/domain/enum"
+	"github.com/2928807938/universal-service-user/user/domain/valueobject"
+	infraEntity "github.com/2928807938/universal-service-user/user/infrastructure/entity"
 
-	basegorm "universal-service-user/share/repository/gorm"
+	basegorm "github.com/2928807938/universal-service-user/share/repository/gorm"
 )
 
 // UserConverter 用户转换器
@@ -28,8 +28,8 @@ func (c *UserConverter) ToEntity(po *infraEntity.UserPO) *entity.User {
 		Username:     po.Username,
 		Nickname:     po.Nickname,
 		Avatar:       po.Avatar,
-		Email:        valueobject.Email(po.Email),        // 直接类型转换
-		Phone:        valueobject.Phone(po.Phone),        // 直接类型转换
+		Email:        valueobject.Email(po.Email), // 直接类型转换
+		Phone:        valueobject.Phone(po.Phone), // 直接类型转换
 		PasswordHash: po.PasswordHash,
 		Status:       enum.UserStatus(po.Status),
 		AuditFields: basegorm.AuditFields{

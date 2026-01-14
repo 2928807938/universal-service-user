@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"time"
 
-	"universal-service-user/oauth/provider"
+	"github.com/2928807938/universal-service-user/oauth/provider"
 )
 
 // Provider 微信 OAuth 提供者

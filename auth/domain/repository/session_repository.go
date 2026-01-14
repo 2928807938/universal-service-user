@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"universal-service-user/auth/domain/entity"
+	"github.com/2928807938/universal-service-user/auth/domain/entity"
 )
 
 // SessionRepository 会话仓储接口

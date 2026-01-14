@@ -1,8 +1,8 @@
-module universal-service-user/verification/domain
+module github.com/2928807938/universal-service-user/verification/domain
 
 go 1.24.11
 
-require universal-service-user/share v0.0.0
+require github.com/2928807938/universal-service-user/share v0.0.0
 
 require (
 	github.com/bytedance/go-tagexpr/v2 v2.9.2 // indirect
@@ -27,4 +27,4 @@ require (
 	google.golang.org/protobuf v1.33.0 // indirect
 )
 
-replace universal-service-user/share => ../../share
+replace github.com/2928807938/universal-service-user/share => ../../share

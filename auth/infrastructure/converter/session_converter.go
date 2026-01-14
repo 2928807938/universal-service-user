@@ -1,9 +1,9 @@
 package converter
 
 import (
-	basegorm "universal-service-user/share/repository/gorm"
-	"universal-service-user/auth/domain/entity"
-	infraEntity "universal-service-user/auth/infrastructure/entity"
+	"github.com/2928807938/universal-service-user/auth/domain/entity"
+	infraEntity "github.com/2928807938/universal-service-user/auth/infrastructure/entity"
+	basegorm "github.com/2928807938/universal-service-user/share/repository/gorm"
 )
 
 // SessionConverter 会话转换器

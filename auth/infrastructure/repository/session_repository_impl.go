@@ -5,12 +5,12 @@ import (
 
 	"gorm.io/gorm"
 
-	"universal-service-user/auth/domain/entity"
-	domainRepo "universal-service-user/auth/domain/repository"
-	"universal-service-user/auth/infrastructure/converter"
-	infraEntity "universal-service-user/auth/infrastructure/entity"
-	"universal-service-user/share/repository"
-	basegorm "universal-service-user/share/repository/gorm"
+	"github.com/2928807938/universal-service-user/auth/domain/entity"
+	domainRepo "github.com/2928807938/universal-service-user/auth/domain/repository"
+	"github.com/2928807938/universal-service-user/auth/infrastructure/converter"
+	infraEntity "github.com/2928807938/universal-service-user/auth/infrastructure/entity"
+	"github.com/2928807938/universal-service-user/share/repository"
+	basegorm "github.com/2928807938/universal-service-user/share/repository/gorm"
 )
 
 // SessionRepositoryImpl 会话仓储实现

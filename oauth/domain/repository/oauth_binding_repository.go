@@ -2,8 +2,8 @@ package repository
 
 import (
 	"context"
-	"universal-service-user/oauth/domain/entity"
-	"universal-service-user/share/repository"
+	"github.com/2928807938/universal-service-user/oauth/domain/entity"
+	"github.com/2928807938/universal-service-user/share/repository"
 )
 
 // OAuthBindingRepository OAuth 绑定仓储接口

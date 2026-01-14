@@ -3,7 +3,7 @@ package sms
 import (
 	"fmt"
 
-	"universal-service-user/notification/domain/provider"
+	"github.com/2928807938/universal-service-user/notification/domain/provider"
 )
 
 // ProviderFactory 短信提供者工厂

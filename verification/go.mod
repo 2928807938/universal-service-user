@@ -1,5 +1,5 @@
-module universal-service-user/verification
+module github.com/2928807938/universal-service-user/verification
 
 go 1.24.11
 
-replace universal-service-user/share => ../share
+replace github.com/2928807938/universal-service-user/share => ../share

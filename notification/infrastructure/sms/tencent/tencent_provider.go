@@ -8,8 +8,8 @@ import (
 	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
 	sms "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/sms/v20210111"
 
-	"universal-service-user/notification/domain/provider"
-	smspkg "universal-service-user/notification/infrastructure/sms"
+	"github.com/2928807938/universal-service-user/notification/domain/provider"
+	smspkg "github.com/2928807938/universal-service-user/notification/infrastructure/sms"
 )
 
 // TencentConfig 腾讯云短信配置

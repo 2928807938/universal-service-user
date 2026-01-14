@@ -11,17 +11,17 @@ import (
 
 // Config 应用配置
 type Config struct {
-	Server        ServerConfig        `yaml:"server"`
-	Database      DatabaseConfig      `yaml:"database"`
-	Redis         RedisConfig         `yaml:"redis"`
-	JWT           JWTConfig           `yaml:"jwt"`
-	Verification  VerificationConfig  `yaml:"verification"`
-	Email         EmailConfig         `yaml:"email"`
-	SMS           SMSConfig           `yaml:"sms"`
-	OAuth         OAuthConfig         `yaml:"oauth"`
+	Server         ServerConfig         `yaml:"server"`
+	Database       DatabaseConfig       `yaml:"database"`
+	Redis          RedisConfig          `yaml:"redis"`
+	JWT            JWTConfig            `yaml:"jwt"`
+	Verification   VerificationConfig   `yaml:"verification"`
+	Email          EmailConfig          `yaml:"email"`
+	SMS            SMSConfig            `yaml:"sms"`
+	OAuth          OAuthConfig          `yaml:"oauth"`
 	LoginRateLimit LoginRateLimitConfig `yaml:"login_rate_limit"`
-	Webhook       WebhookConfig       `yaml:"webhook"`
-	Logging       LoggingConfig       `yaml:"logging"`
+	Webhook        WebhookConfig        `yaml:"webhook"`
+	Logging        LoggingConfig        `yaml:"logging"`
 }
 
 // ServerConfig 服务器配置
@@ -34,7 +34,7 @@ type ServerConfig struct {
 
 // DatabaseConfig 数据库配置
 type DatabaseConfig struct {
-	Driver          string `yaml:"driver"`            // postgres / mysql / sqlite
+	Driver          string `yaml:"driver"` // postgres / mysql / sqlite
 	Host            string `yaml:"host"`
 	Port            int    `yaml:"port"`
 	User            string `yaml:"user"`
@@ -89,11 +89,11 @@ type SMTPConfig struct {
 
 // SMSConfig 短信配置
 type SMSConfig struct {
-	Enabled   bool              `yaml:"enabled"`
-	Provider  string            `yaml:"provider"` // tencent / aliyun / custom
-	Tencent   TencentSMSConfig  `yaml:"tencent"`
-	Aliyun    AliyunSMSConfig   `yaml:"aliyun"`
-	RateLimit RateLimitConfig   `yaml:"rate_limit"`
+	Enabled   bool             `yaml:"enabled"`
+	Provider  string           `yaml:"provider"` // tencent / aliyun / custom
+	Tencent   TencentSMSConfig `yaml:"tencent"`
+	Aliyun    AliyunSMSConfig  `yaml:"aliyun"`
+	RateLimit RateLimitConfig  `yaml:"rate_limit"`
 }
 
 // TencentSMSConfig 腾讯云短信配置
@@ -139,10 +139,10 @@ type OAuthProviderConfig struct {
 
 // LoginRateLimitConfig 登录限频配置
 type LoginRateLimitConfig struct {
-	Enabled bool                   `yaml:"enabled"`
-	IP      LoginLimitRule         `yaml:"ip"`
-	Account LoginLimitRule         `yaml:"account"`
-	Device  LoginLimitRule         `yaml:"device"`
+	Enabled bool           `yaml:"enabled"`
+	IP      LoginLimitRule `yaml:"ip"`
+	Account LoginLimitRule `yaml:"account"`
+	Device  LoginLimitRule `yaml:"device"`
 }
 
 // LoginLimitRule 登录限制规则
@@ -166,9 +166,9 @@ type WebhookConfig struct {
 
 // LoggingConfig 日志配置
 type LoggingConfig struct {
-	Level             string `yaml:"level"`               // debug / info / warn / error
-	Format            string `yaml:"format"`              // json / text
-	EnableSensibleMask bool  `yaml:"enable_sensible_mask"` // 敏感信息脱敏
+	Level              string `yaml:"level"`                // debug / info / warn / error
+	Format             string `yaml:"format"`               // json / text
+	EnableSensibleMask bool   `yaml:"enable_sensible_mask"` // 敏感信息脱敏
 }
 
 // LoadConfig 从文件加载配置

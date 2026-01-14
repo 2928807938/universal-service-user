@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"universal-service-user/notification/domain/provider"
+	"github.com/2928807938/universal-service-user/notification/domain/provider"
 )
 
 // Registry 短信提供者注册中心

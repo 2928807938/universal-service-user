@@ -18,48 +18,48 @@ import (
 	"gorm.io/gorm/logger"
 
 	// API层
-	configHTTP "universal-service-user/api/config-api/http"
-	configAppService "universal-service-user/api/config-api/service"
-	userHTTP "universal-service-user/api/user-api/http"
-	userAppService "universal-service-user/api/user-api/service"
+	configHTTP "github.com/2928807938/universal-service-user/api/config-api/http"
+	configAppService "github.com/2928807938/universal-service-user/api/config-api/service"
+	userHTTP "github.com/2928807938/universal-service-user/api/user-api/http"
+	userAppService "github.com/2928807938/universal-service-user/api/user-api/service"
 
 	// Auth模块
-	authDomain "universal-service-user/auth/domain/service"
-	authEntity "universal-service-user/auth/infrastructure/entity"
-	authJWT "universal-service-user/auth/infrastructure/jwt"
-	authRepo "universal-service-user/auth/infrastructure/repository"
+	authDomain "github.com/2928807938/universal-service-user/auth/domain/service"
+	authEntity "github.com/2928807938/universal-service-user/auth/infrastructure/entity"
+	authJWT "github.com/2928807938/universal-service-user/auth/infrastructure/jwt"
+	authRepo "github.com/2928807938/universal-service-user/auth/infrastructure/repository"
 
 	// Hook模块
-	"universal-service-user/hook"
+	"github.com/2928807938/universal-service-user/hook"
 
 	// Notification模块
-	notificationDomain "universal-service-user/notification/domain/service"
-	notificationEmail "universal-service-user/notification/infrastructure/email"
+	notificationDomain "github.com/2928807938/universal-service-user/notification/domain/service"
+	notificationEmail "github.com/2928807938/universal-service-user/notification/infrastructure/email"
 
 	// OAuth模块
-	oauthEntity "universal-service-user/oauth/infrastructure/entity"
+	oauthEntity "github.com/2928807938/universal-service-user/oauth/infrastructure/entity"
 
 	// ConfigCenter模块
-	configDomainRepo "universal-service-user/configcenter/domain/repository"
-	configDomainService "universal-service-user/configcenter/domain/service"
-	configInfraEntity "universal-service-user/configcenter/infrastructure/entity"
-	configInfraRepo "universal-service-user/configcenter/infrastructure/repository"
+	configDomainRepo "github.com/2928807938/universal-service-user/configcenter/domain/repository"
+	configDomainService "github.com/2928807938/universal-service-user/configcenter/domain/service"
+	configInfraEntity "github.com/2928807938/universal-service-user/configcenter/infrastructure/entity"
+	configInfraRepo "github.com/2928807938/universal-service-user/configcenter/infrastructure/repository"
 
 	// Share模块
-	"universal-service-user/share/config"
-	"universal-service-user/share/errors"
-	shareRedis "universal-service-user/share/redis"
-	"universal-service-user/share/types"
+	"github.com/2928807938/universal-service-user/share/config"
+	"github.com/2928807938/universal-service-user/share/errors"
+	shareRedis "github.com/2928807938/universal-service-user/share/redis"
+	"github.com/2928807938/universal-service-user/share/types"
 
-	userDomainRepo "universal-service-user/user/domain/repository"
+	userDomainRepo "github.com/2928807938/universal-service-user/user/domain/repository"
 	// User模块
-	userDomain "universal-service-user/user/domain/service"
-	userInfraEntity "universal-service-user/user/infrastructure/entity"
-	userInfraRepo "universal-service-user/user/infrastructure/repository"
+	userDomain "github.com/2928807938/universal-service-user/user/domain/service"
+	userInfraEntity "github.com/2928807938/universal-service-user/user/infrastructure/entity"
+	userInfraRepo "github.com/2928807938/universal-service-user/user/infrastructure/repository"
 
 	// Verification模块
-	verificationDomain "universal-service-user/verification/domain/service"
-	verificationInfraRepo "universal-service-user/verification/infrastructure/repository"
+	verificationDomain "github.com/2928807938/universal-service-user/verification/domain/service"
+	verificationInfraRepo "github.com/2928807938/universal-service-user/verification/infrastructure/repository"
 )
 
 func main() {

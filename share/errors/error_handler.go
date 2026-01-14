@@ -3,8 +3,8 @@ package errors
 import (
 	"context"
 	"errors"
+	"github.com/2928807938/universal-service-user/share/types"
 	"net/http"
-	"universal-service-user/share/types"
 
 	"github.com/cloudwego/hertz/pkg/app"
 )
@@ -25,10 +25,11 @@ func HandleError(ctx context.Context, c *app.RequestContext, err error) {
 
 // getHTTPStatus 根据业务错误码获取对应的 HTTP 状态码
 // 错误码分段规则:
-//   10000-10999: 通用错误
-//   11000-11999: User 模块
-//   12000-12999: Order 模块
-//   ...以此类推
+//
+//	10000-10999: 通用错误
+//	11000-11999: User 模块
+//	12000-12999: Order 模块
+//	...以此类推
 func getHTTPStatus(code int) int {
 	// 根据错误码末尾判断类型
 	switch code % 100 {

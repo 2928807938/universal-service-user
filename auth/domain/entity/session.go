@@ -3,17 +3,17 @@ package entity
 import (
 	"time"
 
-	basegorm "universal-service-user/share/repository/gorm"
+	basegorm "github.com/2928807938/universal-service-user/share/repository/gorm"
 )
 
 // Session 会话实体 - 用于管理用户登录会话
 type Session struct {
-	ID               int    // 主键
-	UserID           int    // 用户ID
-	RefreshTokenHash string // Refresh Token 哈希值
-	DeviceType       string // 设备类型: ios/android/web/desktop
-	DeviceName       string // 设备名称
-	IP               string // 登录IP
+	ID               int       // 主键
+	UserID           int       // 用户ID
+	RefreshTokenHash string    // Refresh Token 哈希值
+	DeviceType       string    // 设备类型: ios/android/web/desktop
+	DeviceName       string    // 设备名称
+	IP               string    // 登录IP
 	LastActiveAt     time.Time // 最后活跃时间
 	basegorm.AuditFields
 }

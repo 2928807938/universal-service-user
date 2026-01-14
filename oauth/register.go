@@ -1,10 +1,10 @@
 package oauth
 
 import (
-	"universal-service-user/oauth/provider"
-	"universal-service-user/oauth/provider/alipay"
-	"universal-service-user/oauth/provider/qq"
-	"universal-service-user/oauth/provider/wechat"
+	"github.com/2928807938/universal-service-user/oauth/provider"
+	"github.com/2928807938/universal-service-user/oauth/provider/alipay"
+	"github.com/2928807938/universal-service-user/oauth/provider/qq"
+	"github.com/2928807938/universal-service-user/oauth/provider/wechat"
 )
 
 // RegisterWechat 注册微信 Provider

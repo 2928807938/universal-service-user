@@ -2,7 +2,7 @@ package hook
 
 import (
 	"context"
-	"universal-service-user/user/domain/entity"
+	"github.com/2928807938/universal-service-user/user/domain/entity"
 )
 
 // HookType 钩子类型

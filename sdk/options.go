@@ -6,8 +6,8 @@ import (
 	"github.com/redis/go-redis/v9"
 	"gorm.io/gorm"
 
-	"universal-service-user/notification/infrastructure/email"
-	"universal-service-user/share/config"
+	"github.com/2928807938/universal-service-user/notification/infrastructure/email"
+	"github.com/2928807938/universal-service-user/share/config"
 )
 
 // Option SDK 配置选项函数
@@ -16,8 +16,9 @@ type Option func(*Client)
 // WithDatabase 设置数据库连接
 // db: GORM 数据库实例
 // 示例:
-//   db, _ := gorm.Open(postgres.Open(dsn), &gorm.Config{})
-//   sdk.New(sdk.WithDatabase(db))
+//
+//	db, _ := gorm.Open(postgres.Open(dsn), &gorm.Config{})
+//	sdk.New(sdk.WithDatabase(db))
 func WithDatabase(db *gorm.DB) Option {
 	return func(c *Client) {
 		c.db = db
@@ -27,8 +28,9 @@ func WithDatabase(db *gorm.DB) Option {
 // WithRedis 设置 Redis 连接
 // rdb: Redis 客户端实例
 // 示例:
-//   rdb := redis.NewClient(&redis.Options{Addr: "localhost:6379"})
-//   sdk.New(sdk.WithRedis(rdb))
+//
+//	rdb := redis.NewClient(&redis.Options{Addr: "localhost:6379"})
+//	sdk.New(sdk.WithRedis(rdb))
 func WithRedis(rdb *redis.Client) Option {
 	return func(c *Client) {
 		c.redis = rdb
@@ -38,8 +40,9 @@ func WithRedis(rdb *redis.Client) Option {
 // WithConfig 使用完整的配置对象
 // cfg: 配置对象
 // 示例:
-//   cfg, _ := config.LoadConfig("config.yaml")
-//   sdk.New(sdk.WithConfig(cfg))
+//
+//	cfg, _ := config.LoadConfig("config.yaml")
+//	sdk.New(sdk.WithConfig(cfg))
 func WithConfig(cfg *config.Config) Option {
 	return func(c *Client) {
 		c.config = cfg
@@ -50,7 +53,8 @@ func WithConfig(cfg *config.Config) Option {
 // autoMigrate: true 表示自动建表，false 表示跳过
 // 默认值: true
 // 示例:
-//   sdk.New(sdk.WithAutoMigrate(true))
+//
+//	sdk.New(sdk.WithAutoMigrate(true))
 func WithAutoMigrate(autoMigrate bool) Option {
 	return func(c *Client) {
 		c.autoMigrate = autoMigrate
@@ -63,7 +67,8 @@ func WithAutoMigrate(autoMigrate bool) Option {
 // refreshExpire: Refresh Token 过期时间
 // issuer: 签发者
 // 示例:
-//   sdk.New(sdk.WithJWT("your-secret", 2*time.Hour, 7*24*time.Hour, "user-service"))
+//
+//	sdk.New(sdk.WithJWT("your-secret", 2*time.Hour, 7*24*time.Hour, "user-service"))
 func WithJWT(secret string, accessExpire, refreshExpire time.Duration, issuer string) Option {
 	return func(c *Client) {
 		if c.config == nil {
@@ -83,7 +88,8 @@ func WithJWT(secret string, accessExpire, refreshExpire time.Duration, issuer st
 // expire: 验证码过期时间
 // rateLimit: 发送间隔
 // 示例:
-//   sdk.New(sdk.WithVerification(6, 5*time.Minute, 60*time.Second))
+//
+//	sdk.New(sdk.WithVerification(6, 5*time.Minute, 60*time.Second))
 func WithVerification(codeLength int, expire, rateLimit time.Duration) Option {
 	return func(c *Client) {
 		if c.config == nil {
@@ -100,17 +106,18 @@ func WithVerification(codeLength int, expire, rateLimit time.Duration) Option {
 // WithEmailProvider 设置邮箱服务提供者
 // cfg: SMTP 配置
 // 示例:
-//   smtpCfg := &email.SMTPConfig{
-//       Host:     "smtp.example.com",
-//       Port:     587,
-//       Username: "noreply@example.com",
-//       Password: "password",
-//       From:     "系统通知 <noreply@example.com>",
-//       Templates: map[string]string{
-//           "register": "验证码：{code}",
-//       },
-//   }
-//   sdk.New(sdk.WithEmailProvider(smtpCfg))
+//
+//	smtpCfg := &email.SMTPConfig{
+//	    Host:     "smtp.example.com",
+//	    Port:     587,
+//	    Username: "noreply@example.com",
+//	    Password: "password",
+//	    From:     "系统通知 <noreply@example.com>",
+//	    Templates: map[string]string{
+//	        "register": "验证码：{code}",
+//	    },
+//	}
+//	sdk.New(sdk.WithEmailProvider(smtpCfg))
 func WithEmailProvider(cfg *email.SMTPConfig) Option {
 	return func(c *Client) {
 		c.emailConfig = cfg
@@ -122,7 +129,8 @@ func WithEmailProvider(cfg *email.SMTPConfig) Option {
 // cfg: 短信服务配置
 // 注意: 使用此选项前需要确保已经实现对应的短信服务提供者
 // 示例:
-//   sdk.New(sdk.WithSMSProvider("tencent", smsConfig))
+//
+//	sdk.New(sdk.WithSMSProvider("tencent", smsConfig))
 func WithSMSProvider(provider string, cfg interface{}) Option {
 	return func(c *Client) {
 		c.smsProvider = provider
@@ -135,13 +143,14 @@ func WithSMSProvider(provider string, cfg interface{}) Option {
 // cfg: OAuth 配置
 // 注意: 使用此选项前需要确保已经实现对应的 OAuth 提供者
 // 示例:
-//   oauthCfg := &config.OAuthProviderConfig{
-//       Enabled:     true,
-//       AppID:       "your-app-id",
-//       AppSecret:   "your-app-secret",
-//       RedirectURI: "https://your-domain.com/callback",
-//   }
-//   sdk.New(sdk.WithOAuthProvider("wechat", oauthCfg))
+//
+//	oauthCfg := &config.OAuthProviderConfig{
+//	    Enabled:     true,
+//	    AppID:       "your-app-id",
+//	    AppSecret:   "your-app-secret",
+//	    RedirectURI: "https://your-domain.com/callback",
+//	}
+//	sdk.New(sdk.WithOAuthProvider("wechat", oauthCfg))
 func WithOAuthProvider(provider string, cfg *config.OAuthProviderConfig) Option {
 	return func(c *Client) {
 		if c.config == nil {
@@ -167,11 +176,12 @@ func WithOAuthProvider(provider string, cfg *config.OAuthProviderConfig) Option 
 // accountWindow: 账号限制时间窗口
 // accountLockDuration: 账号锁定时长
 // 示例:
-//   sdk.New(sdk.WithLoginRateLimit(
-//       true,
-//       5, 60*time.Second, 10*time.Minute,
-//       5, 10*time.Minute, 30*time.Minute,
-//   ))
+//
+//	sdk.New(sdk.WithLoginRateLimit(
+//	    true,
+//	    5, 60*time.Second, 10*time.Minute,
+//	    5, 10*time.Minute, 30*time.Minute,
+//	))
 func WithLoginRateLimit(
 	enabled bool,
 	ipMaxAttempts int, ipWindow, ipBlockDuration time.Duration,
@@ -200,7 +210,8 @@ func WithLoginRateLimit(
 // WithLogger 设置日志记录器
 // logger: 自定义日志实现
 // 示例:
-//   sdk.New(sdk.WithLogger(myLogger))
+//
+//	sdk.New(sdk.WithLogger(myLogger))
 func WithLogger(logger Logger) Option {
 	return func(c *Client) {
 		c.logger = logger
@@ -211,7 +222,8 @@ func WithLogger(logger Logger) Option {
 // enable: true 表示启用日志，false 表示禁用
 // 默认值: false
 // 示例:
-//   sdk.New(sdk.WithEnableLog(true))
+//
+//	sdk.New(sdk.WithEnableLog(true))
 func WithEnableLog(enable bool) Option {
 	return func(c *Client) {
 		c.enableLog = enable

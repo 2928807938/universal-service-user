@@ -3,8 +3,8 @@ package repository
 import (
 	"context"
 
-	baseRepo "universal-service-user/share/repository"
-	"universal-service-user/user/domain/entity"
+	baseRepo "github.com/2928807938/universal-service-user/share/repository"
+	"github.com/2928807938/universal-service-user/user/domain/entity"
 )
 
 // UserRepository 用户仓储接口，继承可查询仓储

@@ -1,9 +1,9 @@
 package converter
 
 import (
-	"universal-service-user/api/user-api/dto/vo"
-	"universal-service-user/share/utils"
-	"universal-service-user/user/domain/entity"
+	"github.com/2928807938/universal-service-user/api/user-api/dto/vo"
+	"github.com/2928807938/universal-service-user/share/utils"
+	"github.com/2928807938/universal-service-user/user/domain/entity"
 )
 
 // UserConverter 用户转换器

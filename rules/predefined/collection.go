@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"universal-service-user/rules/core"
+	"github.com/2928807938/universal-service-user/rules/core"
 )
 
 // InRule 值在指定集合中验证规则

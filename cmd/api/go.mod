@@ -1,4 +1,4 @@
-module universal-service-user/cmd/api
+module github.com/2928807938/universal-service-user/cmd/api
 
 go 1.24.11
 
@@ -9,19 +9,19 @@ require (
 	// 数据库
 	gorm.io/driver/postgres v1.5.11
 	gorm.io/gorm v1.25.12
-	universal-service-user/api/config-api v0.0.0
-	universal-service-user/api/user-api v0.0.0
-	universal-service-user/configcenter/domain v0.0.0
-	universal-service-user/configcenter/infrastructure v0.0.0
-	universal-service-user/user/infrastructure v0.0.0
+	github.com/2928807938/universal-service-user/api/config-api v0.0.0
+	github.com/2928807938/universal-service-user/api/user-api v0.0.0
+	github.com/2928807938/universal-service-user/configcenter/domain v0.0.0
+	github.com/2928807938/universal-service-user/configcenter/infrastructure v0.0.0
+	github.com/2928807938/universal-service-user/user/infrastructure v0.0.0
 )
 
 require (
 	github.com/redis/go-redis/v9 v9.7.0
 	gorm.io/driver/mysql v1.5.7
 	gorm.io/driver/sqlite v1.5.7
-	universal-service-user/share v0.0.0
-	universal-service-user/user/domain v0.0.0
+	github.com/2928807938/universal-service-user/share v0.0.0
+	github.com/2928807938/universal-service-user/user/domain v0.0.0
 )
 
 require (
@@ -65,12 +65,12 @@ require (
 )
 
 replace (
-	universal-service-user/api/config-api => ../../api/config-api
-	universal-service-user/api/user-api => ../../api/user-api
-	universal-service-user/bom => ../../bom
-	universal-service-user/configcenter/domain => ../../configcenter/domain
-	universal-service-user/configcenter/infrastructure => ../../configcenter/infrastructure
-	universal-service-user/share => ../../share
-	universal-service-user/user/domain => ../../user/domain
-	universal-service-user/user/infrastructure => ../../user/infrastructure
+	github.com/2928807938/universal-service-user/api/config-api => ../../api/config-api
+	github.com/2928807938/universal-service-user/api/user-api => ../../api/user-api
+	github.com/2928807938/universal-service-user/bom => ../../bom
+	github.com/2928807938/universal-service-user/configcenter/domain => ../../configcenter/domain
+	github.com/2928807938/universal-service-user/configcenter/infrastructure => ../../configcenter/infrastructure
+	github.com/2928807938/universal-service-user/share => ../../share
+	github.com/2928807938/universal-service-user/user/domain => ../../user/domain
+	github.com/2928807938/universal-service-user/user/infrastructure => ../../user/infrastructure
 )

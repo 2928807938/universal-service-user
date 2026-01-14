@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	redisClient "universal-service-user/share/redis"
-	userErrors "universal-service-user/user/domain/errors"
+	redisClient "github.com/2928807938/universal-service-user/share/redis"
+	userErrors "github.com/2928807938/universal-service-user/user/domain/errors"
 
 	"github.com/redis/go-redis/v9"
 )

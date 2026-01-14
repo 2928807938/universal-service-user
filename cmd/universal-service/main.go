@@ -15,9 +15,9 @@ import (
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 
-	domainEntity "universal-service-user/configcenter/domain/entity"
-	domainRepo "universal-service-user/configcenter/domain/repository"
-	infraRepo "universal-service-user/configcenter/infrastructure/repository"
+	domainEntity "github.com/2928807938/universal-service-user/configcenter/domain/entity"
+	domainRepo "github.com/2928807938/universal-service-user/configcenter/domain/repository"
+	infraRepo "github.com/2928807938/universal-service-user/configcenter/infrastructure/repository"
 )
 
 type cliConfig struct {

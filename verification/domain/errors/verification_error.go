@@ -3,7 +3,7 @@ package errors
 import (
 	"fmt"
 
-	"universal-service-user/share/errors"
+	"github.com/2928807938/universal-service-user/share/errors"
 )
 
 // ==================== Verification 模块错误 ====================
@@ -12,15 +12,15 @@ import (
 
 const (
 	// Verification 模块错误码
-	VerificationCodeIncorrect     = 20001 // 验证码错误
-	VerificationCodeExpired       = 20002 // 验证码已过期
-	VerificationCodeUsed          = 20003 // 验证码已使用
-	VerificationCodeTooFrequent   = 20004 // 验证码发送过于频繁
-	VerificationCodeNotFound      = 20005 // 验证码不存在
-	VerificationSceneInvalid      = 20006 // 验证码场景无效
-	VerificationTargetInvalid     = 20007 // 验证目标无效
-	VerificationGenerateFailed    = 20008 // 验证码生成失败
-	VerificationStoreFailed       = 20009 // 验证码存储失败
+	VerificationCodeIncorrect   = 20001 // 验证码错误
+	VerificationCodeExpired     = 20002 // 验证码已过期
+	VerificationCodeUsed        = 20003 // 验证码已使用
+	VerificationCodeTooFrequent = 20004 // 验证码发送过于频繁
+	VerificationCodeNotFound    = 20005 // 验证码不存在
+	VerificationSceneInvalid    = 20006 // 验证码场景无效
+	VerificationTargetInvalid   = 20007 // 验证目标无效
+	VerificationGenerateFailed  = 20008 // 验证码生成失败
+	VerificationStoreFailed     = 20009 // 验证码存储失败
 )
 
 // VerificationError Verification 模块错误，继承自 AppError

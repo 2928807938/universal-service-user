@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"universal-service-user/notification/domain/provider"
-	"universal-service-user/verification/domain/enum"
+	"github.com/2928807938/universal-service-user/notification/domain/provider"
+	"github.com/2928807938/universal-service-user/verification/domain/enum"
 )
 
 // NotificationService 通知领域服务

@@ -6,11 +6,11 @@ import (
 
 	"github.com/google/uuid"
 
-	"universal-service-user/api/config-api/dto/request"
-	"universal-service-user/api/config-api/dto/vo"
-	"universal-service-user/configcenter/domain/entity"
-	"universal-service-user/configcenter/domain/repository"
-	"universal-service-user/share/errors"
+	"github.com/2928807938/universal-service-user/api/config-api/dto/request"
+	"github.com/2928807938/universal-service-user/api/config-api/dto/vo"
+	"github.com/2928807938/universal-service-user/configcenter/domain/entity"
+	"github.com/2928807938/universal-service-user/configcenter/domain/repository"
+	"github.com/2928807938/universal-service-user/share/errors"
 )
 
 // AppService handles app registration.

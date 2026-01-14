@@ -7,10 +7,10 @@ import (
 	"github.com/cloudwego/hertz/pkg/app"
 	"github.com/cloudwego/hertz/pkg/protocol/consts"
 
-	"universal-service-user/api/user-api/dto/request"
-	"universal-service-user/api/user-api/service"
-	"universal-service-user/share/errors"
-	"universal-service-user/share/types"
+	"github.com/2928807938/universal-service-user/api/user-api/dto/request"
+	"github.com/2928807938/universal-service-user/api/user-api/service"
+	"github.com/2928807938/universal-service-user/share/errors"
+	"github.com/2928807938/universal-service-user/share/types"
 )
 
 // UserHandler 用户处理器(用户管理相关)

@@ -1,11 +1,11 @@
-module universal-service-user/oauth/infrastructure
+module github.com/2928807938/universal-service-user/oauth/infrastructure
 
 go 1.24.11
 
 require (
+	github.com/2928807938/universal-service-user/oauth/domain v0.0.0
+	github.com/2928807938/universal-service-user/share v0.0.0
 	gorm.io/gorm v1.25.12
-	universal-service-user/oauth/domain v0.0.0
-	universal-service-user/share v0.0.0
 )
 
 require (
@@ -27,6 +27,6 @@ require (
 )
 
 replace (
-	universal-service-user/oauth/domain => ../domain
-	universal-service-user/share => ../../share
+	github.com/2928807938/universal-service-user/oauth/domain => ../domain
+	github.com/2928807938/universal-service-user/share => ../../share
 )

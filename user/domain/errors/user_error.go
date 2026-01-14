@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"universal-service-user/share/errors"
+	"github.com/2928807938/universal-service-user/share/errors"
 )
 
 // ==================== User 模块错误 ====================
@@ -12,24 +12,24 @@ import (
 
 const (
 	// User 模块错误码
-	UserNotFound              = 11001 // 用户不存在
-	UserAlreadyExists         = 11002 // 用户已存在
-	UserInvalidPassword       = 11003 // 密码错误
-	UserDisabled              = 11004 // 用户已被禁用
-	UserExpired               = 11005 // 用户已过期
-	UserInvalidEmail          = 11006 // 邮箱格式错误
-	UserEmailAlreadyExists    = 11007 // 邮箱已被使用
-	UserUsernameExists        = 11008 // 用户名已被使用
-	UserValidationFailed      = 11009 // 参数验证失败
-	UserPasswordStrengthWeak  = 11010 // 密码强度不够
-	UserPasswordMismatch      = 11011 // 密码不匹配
-	UserInvalidPhone          = 11012 // 手机号格式错误
-	UserPhoneAlreadyExists    = 11013 // 手机号已被使用
-	UserLocked                = 11014 // 用户已被锁定
-	UserStatusAbnormal        = 11015 // 用户状态异常
-	UserInactive              = 11016 // 用户未激活
-	UserAccountTempLocked     = 11017 // 账号临时锁定（登录失败次数过多）
-	UserLoginAttemptExceeded  = 11018 // 登录尝试次数过多
+	UserNotFound             = 11001 // 用户不存在
+	UserAlreadyExists        = 11002 // 用户已存在
+	UserInvalidPassword      = 11003 // 密码错误
+	UserDisabled             = 11004 // 用户已被禁用
+	UserExpired              = 11005 // 用户已过期
+	UserInvalidEmail         = 11006 // 邮箱格式错误
+	UserEmailAlreadyExists   = 11007 // 邮箱已被使用
+	UserUsernameExists       = 11008 // 用户名已被使用
+	UserValidationFailed     = 11009 // 参数验证失败
+	UserPasswordStrengthWeak = 11010 // 密码强度不够
+	UserPasswordMismatch     = 11011 // 密码不匹配
+	UserInvalidPhone         = 11012 // 手机号格式错误
+	UserPhoneAlreadyExists   = 11013 // 手机号已被使用
+	UserLocked               = 11014 // 用户已被锁定
+	UserStatusAbnormal       = 11015 // 用户状态异常
+	UserInactive             = 11016 // 用户未激活
+	UserAccountTempLocked    = 11017 // 账号临时锁定（登录失败次数过多）
+	UserLoginAttemptExceeded = 11018 // 登录尝试次数过多
 )
 
 // UserError User 模块错误，继承自 AppError

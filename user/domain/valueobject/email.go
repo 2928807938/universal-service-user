@@ -1,9 +1,9 @@
 package valueobject
 
 import (
+	"github.com/2928807938/universal-service-user/rules"
+	"github.com/2928807938/universal-service-user/user/domain/errors"
 	"strings"
-	"universal-service-user/rules"
-	"universal-service-user/user/domain/errors"
 )
 
 // Email 邮箱值对象

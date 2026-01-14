@@ -1,13 +1,14 @@
-module universal-service-user/auth/domain
+module github.com/2928807938/universal-service-user/auth/domain
 
 go 1.24.11
 
 require (
-	universal-service-user/share v0.0.0
-	universal-service-user/user/domain v0.0.0
+	github.com/2928807938/universal-service-user/share v0.0.0
+	github.com/2928807938/universal-service-user/user/domain v0.0.0
 )
 
 require (
+	github.com/2928807938/universal-service-user/rules v0.0.0 // indirect
 	github.com/bytedance/go-tagexpr/v2 v2.9.2 // indirect
 	github.com/bytedance/gopkg v0.1.1 // indirect
 	github.com/bytedance/sonic v1.12.6 // indirect
@@ -33,7 +34,6 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.22 // indirect
 	github.com/nyaruka/phonenumbers v1.0.55 // indirect
 	github.com/redis/go-redis/v9 v9.7.0 // indirect
-	github.com/rogpeppe/go-internal v1.14.1 // indirect
 	github.com/tidwall/gjson v1.17.3 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
@@ -49,12 +49,11 @@ require (
 	gorm.io/driver/postgres v1.5.11 // indirect
 	gorm.io/driver/sqlite v1.5.7 // indirect
 	gorm.io/gorm v1.25.12 // indirect
-	universal-service-user/rules v0.0.0 // indirect
 )
 
 replace (
-	universal-service-user/bom => ../../bom
-	universal-service-user/rules => ../../rules
-	universal-service-user/share => ../../share
-	universal-service-user/user/domain => ../../user/domain
+	github.com/2928807938/universal-service-user/bom => ../../bom
+	github.com/2928807938/universal-service-user/rules => ../../rules
+	github.com/2928807938/universal-service-user/share => ../../share
+	github.com/2928807938/universal-service-user/user/domain => ../../user/domain
 )
